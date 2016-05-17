@@ -1,3 +1,13 @@
+# import every .zsh file
+export DOTFILES=$HOME/.dotfiles
+
+zsh_files=($DOTFILES/**/*.zsh)
+for zsh_file in ${zsh_files}
+do
+    source $zsh_file
+done
+
+# for nvm
 export NVM_DIR="/home/dx/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 

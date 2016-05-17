@@ -11,14 +11,10 @@ link_file () {
 }
 
 symbolize_all () {
-    printf "pwd -p $PWDP"
-
     for src in $(find -H "$PWDP" -maxdepth 2 -name '*.symlink')
     do
         dst="$HOME/.$(basename "${src%.*}")"
 	link_file "$src" "$dst"
-
-	printf "$src $dst"
     done
 }
 
