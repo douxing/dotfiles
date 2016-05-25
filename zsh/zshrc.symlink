@@ -11,4 +11,4 @@ done
 export NVM_DIR="/home/dx/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-nvm use --delete-prefix v6.1.0 --silent
+nvm use --delete-prefix default --silent
