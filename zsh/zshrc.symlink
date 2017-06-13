@@ -16,6 +16,8 @@ if [ -s $NVM_DIR/nvm.sh ]; then
 fi
 
 # python virtualenv and virtualenvwrapper
-if [ -s /usr/bin/virtualenvwrapper.sh ]; then
+if [ -s /usr/local/bin/virtualenvwrapper.sh ]; then
+   source /usr/local/bin/virtualenvwrapper.sh
+elif [ -s /usr/bin/virtualenvwrapper.sh ]; then
    source /usr/bin/virtualenvwrapper.sh
 fi
